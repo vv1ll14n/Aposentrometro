@@ -11,6 +11,7 @@ button.addEventListener('click', function (e) {//eu estava colocando a função 
     console.log(valorSexo)
     console.log(valorIdade)
     console.log(valorTempo)
+    //att 01 03-02 Alterei a forma em que se recuperava o sexo do usuario tirei o input text para radio e adicionei um value no mesmo, bem simples mas muito util. Também adicionei o calculo caso nenhuma condição seja satisfeita, além de reorganizar o layout.
 
     if (valorSexo == "feminino") {
         if (valorIdade < 61 & valorTempo >= 15) {
@@ -24,9 +25,12 @@ button.addEventListener('click', function (e) {//eu estava colocando a função 
 
         } else if (valorIdade < 61 & valorTempo < 15) {
 
+            var calculoIdadeAposentar = (61 - valorIdade)
+            var calculotempodecontribuicao = (15 - valorTempo)
+
             var Boxresultado = document.querySelector("#resultado")
-            Boxresultado.innerHTML = 'você não cumpre nenhum requisto para requerer o beneficio'
-            //
+            Boxresultado.innerHTML = 'você não compre nenhum requisto para requerer o beneficio restam: ' + calculoIdadeAposentar + ' ano(s) para adiquirir o direito por idade e ' + calculotempodecontribuicao + ' ano(s) para tempo de contribuição'
+
             console.log('você não compre nenhum requisto para requerer o beneficio')
 
         } else if (valorIdade >= 61 & valorTempo < 15) {
@@ -52,14 +56,17 @@ button.addEventListener('click', function (e) {//eu estava colocando a função 
             var calculoIdadeAposentar = (65 - valorIdade)
 
             var Boxresultado = document.querySelector("#resultado")
-            Boxresultado.innerHTML = 'você já possui tempo de contribuição porem com sua idade ainda não da direito ao seu beneficio, o tempo necessarío para comprir o requisito idade é: ' + calculoIdadeAposentar + ' ano(s)' 
+            Boxresultado.innerHTML = 'você já possui tempo de contribuição porem com sua idade ainda não da direito ao seu beneficio, o tempo necessarío para comprir o requisito idade é: ' + calculoIdadeAposentar + ' ano(s)'
 
             console.log('você já possui tempo de contribuição porem com sua idade inda não da direito ao seu beneficio, o tempo necessarío para cumprir o requisito idade é: ' + calculoIdadeAposentar + '')
 
         } else if (valorIdade < 65 & valorTempo < 15) {
 
+            var calculoIdadeAposentar = (61 - valorIdade)
+            var calculotempodecontribuicao = (15 - valorTempo)
+
             var Boxresultado = document.querySelector("#resultado")
-            Boxresultado.innerHTML = 'você não cumpre nenhum requisto para requerer o beneficio'
+            Boxresultado.innerHTML = 'você não compre nenhum requisto para requerer o beneficio restam: ' + calculoIdadeAposentar + ' ano(s) para adiquirir o direito por idade e ' + calculotempodecontribuicao + ' ano(s) para tempo de contribuição'
 
             console.log('você não cumpre nenhum requisto para requerer o beneficio')
 

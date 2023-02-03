@@ -27,7 +27,13 @@
                     <div id="case-formulario">
                         <form action="" id="formaposentadoria">
                             <label for="csexo">Sexo</label>
-                            <input type="text" name="sexo" id="csexo" class="p-1 text-center">
+                            <div id="box-sexo">
+                                <label for="">Feminino</label>
+                                <input type="radio" name="sexo" id="csexo" value="feminino" class="p-1">
+                                <label for="">Masculino</label>
+                                <input type="radio" name="sexo" id="csexo" value="masculino" class="p-1">
+                            </div>
+
                             <label for="cidade">Idade</label>
                             <input type="text" name="idade" id="cidade" class="p-1 text-center">
                             <label for="ctempo">Tempo de contribuição</label>
@@ -40,13 +46,14 @@
                             <div id="resultado" class="p-3 pt-1 text-center"></div>
                         </div>
                     </div>
-                    <p class="text-white text-center">Calculo exporatico não possui nenhum valor instituicional apenas
+                    <p class="text-white text-center mt-5">Calculo exporatico não possui nenhum valor instituicional
+                        apenas
                         uma estimativa com base na legislação de 2022.*</p>
                 </div>
                 <div class="col-md-6">
                     <h2 class="text-white text-center">Como funciona o calculo por idade e tempo de contribuição</h2>
                     <p class="text-white p-1 text-justify">
-                        O cálculo é feito com base na sua idade homens (65) e mulheres (61) e outro parâmetro levando em
+                        O cálculo é feito com base na sua idade homens (65) e mulheres (61) e outro parâmetro levado em
                         consideração e o tempo de contribuição, no regime CLT, que no caso obrigatoriamente deve ser de
                         15 anos para ambos. Quero, reforça e delimitar que todos as informações e dados como o de
                         cálculo não são utilizadas em local algum.

@@ -43,10 +43,20 @@ form {
     display: flex;
     flex-direction: column;
 }
-
+/**/
+#box-sexo{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+#box-sexo label{
+    font-size: 1.5em;
+}
+#box-sexo input{ 
+    width: 150px;
+}
 /**/
 #case-formulario {
-
     height: 500px;
 }
 
@@ -112,6 +122,10 @@ a {
         cursor: none;
         font-size: 0.9em;
     }
+    #box-sexo input{ 
+        width: 80px;
+    }
+    
 }
 
 /*Small devices (landscape phones, 576px and up)*/
