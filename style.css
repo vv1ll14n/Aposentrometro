@@ -1,0 +1,131 @@
+/*base*/
+body {
+    background-color: #1B4965;
+    font-size: 1em;
+}
+
+/**/
+header {
+    background-color: #1B4965;
+}
+
+h1 {
+    color: white;
+    font-size: 5em;
+}
+
+hr {
+    width: 90%;
+    background-color: white;
+}
+
+span {
+    font-size: 1.5em;
+}
+
+/**/
+label {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+input {
+    border: 1px solid white;
+    border-radius: 25px;
+    height: 40px;
+    padding: 1%;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/**/
+#case-formulario {
+
+    height: 500px;
+}
+
+
+#box-resultado {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#resultado {
+    background-color: white;
+    height: 90px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: none;
+}
+
+#calcular {
+    margin: 3% 0;
+    background-color: white;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+#calcular:hover {
+    background-color: #1B4965;
+    color: white;
+}
+
+/**/
+footer {
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    font-size: 0.8em;
+}
+
+a {
+    color: black;
+}
+
+
+
+
+/*responsividade*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 2.3em;
+    }
+
+    label {
+        font-size: 1.5em;
+    }
+    #resultado {
+        background-color: white;
+        height: 130px;
+        border: 1px solid white;
+        border-radius: 25px;
+        cursor: none;
+        font-size: 0.9em;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}

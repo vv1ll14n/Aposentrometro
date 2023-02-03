@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Aposentômetro</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-white p-5"><span>A</span>posentômetro...</h1>
+    </header>
+    <hr>
+
+
+    <main>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="case-formulario">
+                        <form action="" id="formaposentadoria">
+                            <label for="csexo">Sexo</label>
+                            <input type="text" name="sexo" id="csexo" class="p-1 text-center">
+                            <label for="cidade">Idade</label>
+                            <input type="text" name="idade" id="cidade" class="p-1 text-center">
+                            <label for="ctempo">Tempo de contribuição</label>
+                            <input type="text" name="tempo" id="ctempo" class="p-1 text-center">
+
+                            <button type="submit" id="calcular">Calcular</button>
+
+                        </form>
+                        <div class="mt-3" id="box-resultado">
+                            <div id="resultado" class="p-3 pt-1 text-center"></div>
+                        </div>
+                    </div>
+                    <p class="text-white text-center">Calculo exporatico não possui nenhum valor instituicional apenas
+                        uma estimativa com base na legislação de 2022.*</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white text-center">Como funciona o calculo por idade e tempo de contribuição</h2>
+                    <p class="text-white p-1 text-justify">
+                        O cálculo é feito com base na sua idade homens (65) e mulheres (61) e outro parâmetro levando em
+                        consideração e o tempo de contribuição, no regime CLT, que no caso obrigatoriamente deve ser de
+                        15 anos para ambos. Quero, reforça e delimitar que todos as informações e dados como o de
+                        cálculo não são utilizadas em local algum.
+
+                    </p>
+                    <div class="w-50 h-25 m-auto">
+                        <img src="animacaoAposentadoria.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-md-4 pt-3">
+                    <ul>
+                        link
+                        <li><a href="https://www.contabeis.com.br/noticias/51828/aposentadoria-por-idade-como-funciona-e-quem-tem-direito/#:~:text=Pelas%20regras%20atuais%2C%20t%C3%AAm%20direito,n%C3%BAmeros%20s%C3%A3o%20relativos%20a%202022."
+                                target="_blank">
+                                link do artigo que consultei</a></li>
+                        <li>Meu<a href="https://github.com/vv1ll14n" target="_blank"> Github</a></li>
+                        <li>Meu<a href="https://vv1ll14n.github.io/linktree/" target="_blank"> Linktree</a></li>
+                        outros projetos
+                        <li><a href="https://vv1ll14n.github.io/Gerador-de-qrcode/" target="_blank">QRcode</a></li>
+                        <li><a href="#">Calculo de salário</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-center mt-5">Criado por Willian Oliveira</h5>
+                    <p class="text-center">Todos os direitos reservados &copy 2023</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center mt-5  ">Obrigado pela visita espero que tenha gostado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="calcularaposentoria.js"></script>
+</body>
+
+</html>
