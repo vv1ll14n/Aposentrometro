@@ -51,7 +51,7 @@ button.addEventListener('click', function (e) {//eu estava colocando a função 
 
     }
 
-    if (valorSexo == 'masculino') {
+    if (valorSexo == "masculino") {
         if (valorIdade < 65 & valorTempo >= 15) {
             var calculoIdadeAposentar = (65 - valorIdade)
 
@@ -62,7 +62,7 @@ button.addEventListener('click', function (e) {//eu estava colocando a função 
 
         } else if (valorIdade < 65 & valorTempo < 15) {
 
-            var calculoIdadeAposentar = (61 - valorIdade)
+            var calculoIdadeAposentar = (65 - valorIdade)
             var calculotempodecontribuicao = (15 - valorTempo)
 
             var Boxresultado = document.querySelector("#resultado")
